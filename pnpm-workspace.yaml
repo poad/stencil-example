@@ -1,0 +1,21 @@
+packages:
+  - .
+
+allowBuilds:
+  esbuild: false
+  sharp: false
+  unrs-resolver: false
+  workerd: false
+
+blockExoticSubdeps: true
+
+minimumReleaseAge: 10080 # 7 days in minutes
+
+minimumReleaseAgeExclude:
+  - pnpm@11.21.0
+
+overrides:
+  chokidar: '>=5'
+  semver: '>=7'
+
+trustPolicy: no-downgrade
