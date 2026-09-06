@@ -15,9 +15,7 @@ describe('my-component', () => {
   });
 
   it('renders with values', async () => {
-    const { root } = await render(
-      <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>,
-    );
+    const { root } = await render(<my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>);
     await expect(root).toEqualHtml(`
       <my-component class="hydrated">
         <mock:shadow-root>

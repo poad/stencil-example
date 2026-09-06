@@ -4,10 +4,7 @@
     "allowUnreachableCode": false,
     "declaration": false,
     "experimentalDecorators": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": ["dom", "esnext"],
     "module": "es2015",
     "moduleResolution": "bundler",
     "target": "esnext",
@@ -17,12 +14,7 @@
     "jsx": "react",
     "jsxFactory": "h",
     "jsxFragmentFactory": "h.Fragment",
-    "types": [
-      "@stencil/vitest/globals"
-    ]
+    "types": ["@stencil/vitest/globals"]
   },
-  "exclude": [
-    "node_modules",
-    "eslint.config.ts"
-  ]
+  "exclude": ["node_modules", "eslint.config.ts"]
 }
