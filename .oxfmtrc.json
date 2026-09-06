@@ -12,5 +12,5 @@
   "trailingComma": "all",
   "useTabs": false,
   "sortPackageJson": false,
-  "ignorePatterns": []
+  "ignorePatterns": ["**/*.d.ts", "src/**/*.md"]
 }
