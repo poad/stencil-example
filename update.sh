@@ -21,7 +21,7 @@ fi
 echo ""
 pwd
 
-if ! (pnpm self-update && pnpm install --fix-lockfile && pnpm up --include-github-actions && pnpm audit --fix override && pnpm up && pnpm lint-fix && pnpm build); then
+if ! (pnpm install --fix-lockfile && pnpm self-update && pnpm install && pnpm up --include-github-actions && pnpm audit --fix override && pnpm up && pnpm lint-fix && pnpm build); then
   cd "${CUR}" || exit
   exit 1
 fi
